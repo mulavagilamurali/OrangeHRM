@@ -1,0 +1,47 @@
+package stepDefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+import com.Utility.Log;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class OrangeHRMApplicationMethods {
+	
+	WebDriver driver;
+	String ApplicationURL = "http://127.0.0.1/orangehrm-4.2.0.1/symfony/web/index.php/auth/login";
+	
+	@Given("^User should Launch chrome browser$")
+	public void user_should_Launch_chrome_browser()  {
+	    System.setProperty("webdriver.chrome.browser","E:\\SriniSir_AutomationScripts\\OrangeHRMApplication_Cucumber\\Browsers\\chromedriver.exe");
+	    driver = new ChromeDriver();
+	    System.out.println("Successfully launched Browser");
+	}
+
+	@When("^User should enter valid OrangeHRM application URL Address$")
+	public void user_should_enter_valid_OrangeHRM_application_URL_Address() {
+	    driver.navigate().to(ApplicationURL);
+	    System.out.println("Successfully Launched orangeHRM application");
+	}
+
+	@Then("^User should navigate to OrangeHRM application URL Address$")
+	public void user_should_navigate_to_OrangeHRM_application_URL_Address() {
+		String actual_LoginPanelText = driver.findElement(By.id("logInPanelHeading")).getText();
+		String expected_LoginPanelText="LOGIN Panel";
+		
+		junit.framework.Assert.assertEquals(actual_LoginPanelText,expected_LoginPanelText, "Failed to Navigate to Ohrm Application");
+	}
+
+	@Then("^User should close OrangeHRM application$")
+	public void user_should_close_OrangeHRM_application() {
+	    driver.close();
+	    System.out.println("Successfully Closed Browser");
+	}
+
+
+}

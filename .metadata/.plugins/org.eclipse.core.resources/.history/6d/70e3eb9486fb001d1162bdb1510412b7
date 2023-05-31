@@ -1,0 +1,66 @@
+package com.RelativeXpath;
+
+import java.io.File;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.Utility.Log;
+
+public class RediffMail {
+	public WebDriver driver;
+	@BeforeTest
+	public void setUp() {
+		System.setProperty("webdriver.chrome.driver","E:\\SriniSir_AutomationScripts\\OrangeHRM_Application_Maven\\Browsers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		String ApplicationURL = "http://register.rediff.com/register/register.php?FormName=user_details";
+		driver.navigate().to(ApplicationURL);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Log.info("************Successfully Browser Launched ********* ");
+	}
+	
+	@AfterTest
+	public void tearDown() {
+		driver.quit();
+	}
+	@Test
+	public void reddIff() throws InterruptedException {
+		
+		// <input type="text" onblur="fieldTrack(this);" name="name60a3d24a" value="" style="width:185px;" maxlength="61">
+		//----------
+		
+		//Single attribute //tagName[@AttributeType="Attribute Value"]
+		
+		// //input(@onblur='fieldTrack(this);'
+		
+		// Start with syntax = //tagName[Starts-with(@attributeType,'AttributeValue');
+		// //input[Starts-with(@name,'name')]
+		
+		//By fullNameLocator = By.xpath("//input[starts-with(@name,'name')]");
+		
+		// contains syntax //tagName[contains(@attributetype,'some part of values which does not change ')
+		// //input[contains(@name,'name')]
+		
+		By fullNameLocator = By.xpath("//input[contains(@name,'name')]");
+		WebElement fullName=driver.findElement(fullNameLocator);
+		fullName.sendKeys("Testing");
+		
+		Thread.sleep(5000);
+		
+		
+		  
+		  File takingScreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		  FileUtils.copyFile(takingScreenshot,new File("./OrangeHRM_Application_Maven/ScreenShots/RedIffEmail_Screenshots.redIffEmail.png"));
+		 
+	}
+	
+}

@@ -1,0 +1,33 @@
+package com.encourage.testscripts;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class AllPagesOpening {
+	WebDriver driver;
+	@Test
+	public void All_pages() throws Exception{
+	System.setProperty("webdriver.gecko.driver","E:\\Selenium\\Drivers\\geckodriver.exe");
+	driver = new FirefoxDriver();
+	driver.navigate().to("http://devencourage.fingent.net/");
+	driver.findElement(By.id("email_id")).sendKeys("harry@gm.com");
+	driver.findElement(By.id("pwd")).sendKeys("12345678");
+	driver.findElement(By.xpath("//input[@value='Login'][@type='submit']")).click();
+	
+	/*for (WebElement element : driver.findElements(locator.getBy())){
+		  element.click();
+		}*/
+	List<WebElement> objLinks = driver.findElements(By.tagName("a"));
+	for (WebElement objalllinks : objLinks) {
+		String Str = objalllinks.getText();
+		System.out.println(Str);
+	}
+	//objalllinks.click();
+	driver.quit();
+	}
+}

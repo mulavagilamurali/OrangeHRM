@@ -1,0 +1,34 @@
+package stepDefinition;
+
+import org.openqa.selenium.WebDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class OrangeHRMApplicationMethods {
+	
+	WebDriver driver;
+	
+	@Given("^User should Launch chrome browser$")
+	public void user_should_Launch_chrome_browser()  {
+	    System.setProperty("webdriver.chrome.browser","");
+	}
+
+	@When("^User should enter valid OrangeHRM application URL Address$")
+	public void user_should_enter_valid_OrangeHRM_application_URL_Address() {
+	    
+	}
+
+	@Then("^User should navigate to OrangeHRM application URL Address$")
+	public void user_should_navigate_to_OrangeHRM_application_URL_Address() {
+	   
+	}
+
+	@Then("^User should close OrangeHRM application$")
+	public void user_should_close_OrangeHRM_application() throws Throwable {
+	    
+	}
+
+
+}

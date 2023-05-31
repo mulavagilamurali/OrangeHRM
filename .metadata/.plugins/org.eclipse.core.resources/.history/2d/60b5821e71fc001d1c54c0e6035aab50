@@ -1,0 +1,34 @@
+package com.OrangeHRMApplicationWebPages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
+
+public class OrangeHRM_LogInPage {
+	
+	// An Object Repository Class - will be updated with identification of elements of the
+		 //   WebPage and Operations done on the WebElements
+	
+	@FindBy(id="logInPanelHeading")
+	WebElement LogInPageLoginPanel;
+	
+	@FindBy(id="txtUsername")
+	WebElement userName;
+	
+	@FindBy(name="txtPassword")
+	WebElement password;
+	
+	@FindBy(name="Submit")
+	WebElement loginPageLoginButton;
+	
+	@FindBy(xpath="//*[@id=\"divLogo\"]/img")
+	WebElement LoginPageLogo;
+	
+	public void validatingLogin() {
+		String actual_LoginPanelText = LogInPageLoginPanel.getText();
+		String expected_LoginPanelText="LOGIN Panel";
+		
+		Assert.assertEquals(actual_LoginPanelText,expected_LoginPanelText, "Failed to Navigate to Ohrm Application");
+	}
+
+}

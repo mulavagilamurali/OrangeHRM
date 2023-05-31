@@ -1,0 +1,78 @@
+2023-05-27 15:38:35,325 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 15:38:37,690 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 15:38:45,783 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 15:38:47,286 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 15:38:55,168 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 15:38:55,732 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 15:42:56,041 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 15:42:56,794 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 15:43:04,530 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 15:43:05,169 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 15:43:13,177 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 15:43:13,765 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 15:49:01,913 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 15:49:02,720 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 15:52:35,458 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 15:52:37,894 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 15:57:01,923 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 15:57:02,968 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 15:59:14,064 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 15:59:14,828 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 16:03:48,820 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 16:03:49,889 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 16:04:41,192 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 16:04:42,122 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 16:06:02,587 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 16:06:03,197 - Log -INFO - Validated Login Panel Text
+2023-05-27 16:06:03,210 - Log -INFO -  Validating LogIn Page LogInPanel Text Successfull - Naviagated to LogIN Page
+2023-05-27 16:06:03,831 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 16:07:21,716 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 16:07:22,035 - Log -INFO - Validated Login Panel Text
+2023-05-27 16:07:22,047 - Log -INFO -  Validating LogIn Page LogInPanel Text Successfull - Naviagated to LogIN Page
+2023-05-27 16:07:22,678 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 16:07:29,458 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 16:07:32,123 - Log -INFO - Successfullly Login into OrangeHRM Application
+2023-05-27 16:07:32,140 - Log -INFO - Validation of LogIn functionality Successfull
+2023-05-27 16:07:32,508 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 16:07:39,436 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 16:07:39,814 - Log -INFO - OrangeHRM login contains OrangeHRM logo-PASS
+2023-05-27 16:07:39,825 - Log -INFO -  OrangeHRM Appliction LogIn Page Logo existing
+2023-05-27 16:07:40,346 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 16:50:32,311 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 16:50:37,616 - Log -INFO - Validated Login Panel Text
+2023-05-27 16:50:37,631 - Log -INFO -  Validating LogIn Page LogInPanel Text Successfull - Naviagated to LogIN Page
+2023-05-27 16:50:49,682 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 16:51:11,306 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 16:51:20,990 - Log -INFO - Successfullly Login into OrangeHRM Application
+2023-05-27 16:51:21,011 - Log -INFO - Validation of LogIn functionality Successfull
+2023-05-27 16:51:24,568 - Log -INFO - Successfullly Login into OrangeHRM Application
+2023-05-27 16:51:24,591 - Log -INFO - Validation of LogIn functionality Successfull
+2023-05-27 16:51:29,086 - Log -INFO - Successfullly Login into OrangeHRM Application
+2023-05-27 16:51:29,121 - Log -INFO - Validation of LogIn functionality Successfull
+2023-05-27 16:51:39,445 - Log -INFO - Successfullly Login into OrangeHRM Application
+2023-05-27 16:51:39,459 - Log -INFO - Validation of LogIn functionality Successfull
+2023-05-27 16:51:44,191 - Log -INFO - Successfullly Login into OrangeHRM Application
+2023-05-27 16:51:44,205 - Log -INFO - Validation of LogIn functionality Successfull
+2023-05-27 16:51:45,411 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-27 16:51:58,355 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-27 16:51:58,708 - Log -INFO - OrangeHRM login contains OrangeHRM logo-PASS
+2023-05-27 16:51:58,717 - Log -INFO -  OrangeHRM Appliction LogIn Page Logo existing
+2023-05-27 16:51:59,117 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-29 15:38:33,093 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-29 15:39:15,510 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-29 15:39:43,193 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-29 15:39:59,768 - Log -INFO - Successfullly Login into OrangeHRM Application
+2023-05-29 15:39:59,788 - Log -INFO - Validation of LogIn functionality Successfull
+2023-05-29 15:40:03,115 - Log -INFO - Successfullly Login into OrangeHRM Application
+2023-05-29 15:40:03,130 - Log -INFO - Validation of LogIn functionality Successfull
+2023-05-29 15:40:09,627 - Log -INFO - Successfullly Login into OrangeHRM Application
+2023-05-29 15:40:09,640 - Log -INFO - Validation of LogIn functionality Successfull
+2023-05-29 15:40:13,388 - Log -INFO - Successfullly Login into OrangeHRM Application
+2023-05-29 15:40:13,402 - Log -INFO - Validation of LogIn functionality Successfull
+2023-05-29 15:40:17,408 - Log -INFO - Successfullly Login into OrangeHRM Application
+2023-05-29 15:40:17,417 - Log -INFO - Validation of LogIn functionality Successfull
+2023-05-29 15:40:18,355 - Log -INFO - ************Successfully Closed Browser ********* 
+2023-05-29 15:40:29,400 - Log -INFO - ************Successfully Browser Launched ********* 
+2023-05-29 15:40:29,778 - Log -INFO - OrangeHRM login contains OrangeHRM logo-PASS
+2023-05-29 15:40:29,793 - Log -INFO -  OrangeHRM Appliction LogIn Page Logo existing
+2023-05-29 15:40:30,108 - Log -INFO - ************Successfully Closed Browser ********* 

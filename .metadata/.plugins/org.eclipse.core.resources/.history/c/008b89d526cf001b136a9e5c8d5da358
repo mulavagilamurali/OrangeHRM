@@ -1,0 +1,15 @@
+package com.hrms.testscripts;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TC_104 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver","E:\\Selenium\\Drivers\\geckodriver.exe");
+		WebDriver driver =  new FirefoxDriver();
+
+	}
+
+}

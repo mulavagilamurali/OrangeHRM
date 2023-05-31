@@ -1,0 +1,12 @@
+package com.hrms.testscripts;
+
+public class TC_104 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver","E:\\Selenium\\Drivers\\geckodriver.exe");
+		WebDriver new = driver FirefoxDriver();
+
+	}
+
+}

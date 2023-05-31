@@ -1,0 +1,9 @@
+package test;
+
+public class first {
+	public static void main(String arg[]) {
+		
+	System.out.println("what tha fuck is going here");
+	}
+
+}

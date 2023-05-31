@@ -1,0 +1,93 @@
+package com.Testcases;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+import com.BaseTest.BaseTest;
+import com.Utility.Log;
+
+public class AddEmployee extends BaseTest {
+	
+	FileInputStream configPropertiesFile;
+	Properties configProperty;
+	
+	@Test(priority =1)
+	public void loginPageTest() throws IOException, InterruptedException {
+		Thread.sleep(5000);
+		configPropertiesFile = new FileInputStream("E:\\SriniSir_AutomationScripts\\OrangeHRM_Application_Maven\\src\\main\\java\\com\\Config\\OrangeHRMApplication.properties");
+		configProperty = new Properties();
+		configProperty.load(configPropertiesFile);
+		//Thread.sleep(5000);
+
+		// UserName
+		By userNameLocator=By.id(configProperty.getProperty("loginPageUserName"));
+		WebElement userName = driver.findElement(userNameLocator);
+		userName.sendKeys("Admin");
+		
+		//Password
+		By passwordLocator = By.id(configProperty.getProperty("loginPagePassword"));
+		WebElement passwrod = driver.findElement(passwordLocator);
+		passwrod.sendKeys("Mdishi0@@");
+		
+		//Login button
+		By loginbtnLocator = By.id(configProperty.getProperty("loginPageSubmitBtn"));
+		WebElement loginbtn = driver.findElement(loginbtnLocator);
+		loginbtn.click();
+		Thread.sleep(5000);
+		Log.info("Sucessfully Login into home Page");
+		// 14
+		
+	}
+	
+	@Test(priority=2,description="Add Employee Test")
+	public void addEmployeeTest() throws InterruptedException, IOException {
+		Actions pim = new Actions(driver);
+		By pimLocator = By.linkText("PIM");
+		WebElement pimElement = driver.findElement(pimLocator);
+		pim.moveToElement(pimElement).build().perform();
+		By addEmployeeLocator = By.linkText("Add Employee");	
+		WebElement addEmployeeElement = driver.findElement(addEmployeeLocator);
+		addEmployeeElement.click();
+		System.out.println("opened add employee page");
+		
+		// excel file
+		FileInputStream file = new FileInputStream("E:\\SriniSir_AutomationScripts\\OrangeHRM_Application_Maven\\src\\main\\java\\com\\ApplicationTestDataFile\\AddEmployeeTest.xlsx");
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet =workbook.getSheet("Sheet1");
+		
+		
+		
+		// Adding employee in OrangeHRM
+		By firstNameLocator = By.id(configProperty.getProperty("firstName"));
+		WebElement firstName = driver.findElement(firstNameLocator);
+		firstName.sendKeys("Philips");
+		
+		// Middle Name
+		By middleNameLocator = By.id(configProperty.getProperty("middleName"));
+		WebElement middletName = driver.findElement(middleNameLocator);
+		middletName.sendKeys("Philips");
+		
+		By lastNameLocator = By.id(configProperty.getProperty("lastName"));
+		WebElement lastName = driver.findElement(lastNameLocator);
+		lastName.sendKeys("Kane");
+		
+		
+
+		By saveBtnLocator = By.id("btnSave");
+		WebElement saveBtn = driver.findElement(saveBtnLocator);
+		saveBtn.click();
+		System.out.println("Image Saved Successfully");
+		Thread.sleep(5000);		
+
+	}
+	
+}

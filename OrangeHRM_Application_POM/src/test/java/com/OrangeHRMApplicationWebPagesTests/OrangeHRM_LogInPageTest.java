@@ -1,0 +1,56 @@
+package com.OrangeHRMApplicationWebPagesTests;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.Test;
+
+import com.BaseTest.BaseTest;
+import com.OrangeHRMApplicationWebPages.OrangeHRM_LogInPage;
+import com.Utility.Log;
+
+public class OrangeHRM_LogInPageTest extends BaseTest{
+	
+	OrangeHRM_LogInPage LogInPage;
+
+	@Test(priority=1, description="Validating Login Panel text")
+	public void validatingLoginPanelTextTest() {
+		LogInPage = new OrangeHRM_LogInPage();
+		LogInPage.validatingLoginPanelText();
+		Log.info(" Validating LogIn Page LogInPanel Text Successfull - Naviagated to LogIN Page");
+
+	}
+	
+	@Test(priority=2,description="Validating LogIn Page")
+	public void validatingLoginTest() throws IOException {
+		LogInPage = new OrangeHRM_LogInPage();
+		FileInputStream loginTestDataFile = new FileInputStream("E:\\SriniSir_AutomationScripts\\OrangeHRM_Application_POM\\src\\main\\java\\com\\ApplicationTestDataFile\\LogInTest.xlsx");
+		XSSFWorkbook workbook = new XSSFWorkbook(loginTestDataFile);
+		XSSFSheet sheet = workbook.getSheet("Sheet1");
+		for (int rowIndex=1;rowIndex<sheet.getLastRowNum();rowIndex++) {
+			Row row = sheet.getRow(rowIndex);
+			Cell cell=row.getCell(9);
+			String username = cell.getStringCellValue();
+			Cell cellPassword=row.getCell(10);
+			String password = cell.getStringCellValue();
+			LogInPage.validatingLogin(username, password);			
+			Log.info("Validation of LogIn functionality Successfull");
+		}
+		
+		
+
+	}
+	@Test(priority=3, description = "Validating the Login page logo")
+	public void validatingLoginPageLogo() {
+		LogInPage = new OrangeHRM_LogInPage();
+		LogInPage.validatingLoginPageLogo();
+		Log.info(" OrangeHRM Appliction LogIn Page Logo existing");
+
+	}
+	
+
+}

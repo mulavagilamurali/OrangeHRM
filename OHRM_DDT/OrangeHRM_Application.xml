@@ -1,0 +1,12 @@
+<suite name="OrangeHRM_Application" parellel="tests">
+ 	<test name="Login Test">
+  		<classes>
+			<class name="com.TestCases.OrangeHRM_LoginTest"/>
+		</classes>
+	</test>
+	<test name="Add Employee Test">
+  		<classes>
+			<class name="com.TestCases.AddEmployeeTest"/>
+		</classes>
+	</test>
+</suite>			
